@@ -1,0 +1,96 @@
+*{
+    background: rgb(84, 84, 62);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: poppins;
+}
+
+
+/* cool borders */
+ :root {
+  --borderRed: 2px solid red;
+  --borderLime: 2px solid lime;
+  --borderPink: 2px solid pink;
+  --borderViolet: 2px solid violet;
+  --borderBlue: 2px solid blue;
+  --borderBlack: 2px solid black;
+  --borderOrange: 2px solid orange;
+  --borderIndigo: 2px solid indigo;
+  --borderWhite: 2px solid white;
+  --borderYellow: 2px solid yellow;
+  --borderPurple: 2px solid purple;
+  --borderBrown: 2px solid brown;
+  --borderGray: 2px solid gray;
+  --borderGreen: 2px solid green;
+  --borderAqua: 4px solid aqua;
+  --borderTurquoise: 2px solid turquoise;
+  --background: rgb(24,24,24);
+  --second-background:rgb(21,21,21);
+} 
+
+body{
+    border: var(--borderOrange);
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+nav{
+    border: var(--borderBlue);
+    position: fixed;
+    width: 100%;
+    padding: 2em 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(15, 15, 15, .8);
+    backdrop-filter: blue(10px);
+    z-index: 1000;
+}
+
+ul{
+     border: var(--borderLime);
+     display: flex;
+     align-items: center;
+     gap: 3em;
+}
+nav ul a{
+    border: var(--borderPink);
+    color: white;
+    opacity: .7;
+    transition: .2s ease-in-out;
+}
+nav ul a:hover{
+    border: var(--borderPurple);
+    opacity: 1;
+}
+
+.logo{
+    border: var(--borderOrange);
+    font-size: 2em;
+    color: white;
+    font-weight: 800;
+    opacity: .8;
+    transition: .2s ease-in-out;
+}
+.logo:hover{
+    opacity: 1;
+}
+.btn{
+    padding: .5em 1em;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: .5em;
+    font-size: 1.1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: white;
+    color: var(--background);
+}
