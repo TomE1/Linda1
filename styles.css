@@ -1,5 +1,4 @@
 *{
-    background: rgb(84, 84, 62);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -93,4 +92,199 @@ nav ul a:hover{
 .btn:hover{
     background-color: white;
     color: var(--background);
+}
+
+span{
+    background: linear-gradient(to right, #6cff52, #3ec5ff);
+    background-clip: text;
+    color: transparent;
+}
+
+#menu{
+    color: white;
+    font-size: 3em;
+    display: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 5% 15%;
+}
+
+
+#home{
+    border: var(--borderOrange);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+}
+
+#home img{
+    border: var(--borderLime);
+    width: 18vw;
+    border-radius: 50%;
+}
+
+.info-box{
+    border: var(--borderPink);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5em;
+    max-width: 600px;
+}
+.info-box h1{
+    border: var(--borderAqua);
+    font-size: 5em;
+    font-weight: 500;
+}
+
+.info-box h3{
+    border: var(--borderGreen);
+    font-size: 2em;
+    font-weight: 400;
+}
+.info-box p{
+    opacity: .7;
+}
+.btn-box{
+    border: var(--borderPurple);
+    display: flex;
+    gap: 1em;
+}
+
+.btn-box .btn:nth-of-type(2){
+    background-color: white;
+    color: var(--second-background)
+}
+.btn-box .btn:nth-of-type(2):hover{
+    background-color: var(--second-background);
+    color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #6cff52, #3ec5ff);
+}
+ 
+#about{
+    border: var(--borderGray);
+    background-color: var(--second-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+
+}
+
+#about img{
+    width: 30vw;
+    border-radius: 1em;
+}
+.about-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    gap: 2em;
+}
+
+.about-box h1{
+    font-size: 5em;
+}
+
+.about-box p{
+    color: white;
+    opacity: .8;
+}
+
+.skills{
+    display: flex;
+    text-align: left;
+    gap: 10em;
+}
+.skills ul{
+font-size: 1.3em;
+font-weight: 500;
+display: flex;
+flex-direction: column;
+color: white;
+opacity: .8;
+align-items: baseline
+}
+
+.skills ul li{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-size: 1.3em;
+    transition: .3s ease-in-out;
+}
+.skills ul li span:hover{
+    transform: translateX(10px);
+}
+.skills ul li i{
+    border: var(--borderWhite);
+    font-size: 1.2em;
+}
+.about-box h2{
+    font-size: 2.5em;
+}
+
+#services{
+    background-color: var(--background);
+}
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin: .5em 0;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 2em;
+}
+.box{
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 3em;
+    gap: 2em;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.box:hover{
+    border: 3px solid rgb(100, 100, 100);
+}
+.box p{
+    opacity: .8;
+}
+.box h1{
+    font-size: 2em;
+}
+.box img{
+    min-width: 25px;
+    border-radius: .5em;
+}
+#contact{
+    background-color: var(--second-background);
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+form .input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
