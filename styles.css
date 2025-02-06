@@ -10,7 +10,7 @@
 
 /* cool borders */
  :root {
-  --borderRed: 2px solid red;
+  /* --borderRed: 2px solid red;
   --borderLime: 2px solid lime;
   --borderPink: 2px solid pink;
   --borderViolet: 2px solid violet;
@@ -25,10 +25,13 @@
   --borderGray: 2px solid gray;
   --borderGreen: 2px solid green;
   --borderAqua: 4px solid aqua;
-  --borderTurquoise: 2px solid turquoise;
+  --borderTurquoise: 2px solid turquoise; */
+
+
   --background: rgb(24,24,24);
   --second-background:rgb(21,21,21);
-} 
+}  
+ 
 
 body{
     border: var(--borderOrange);
@@ -126,6 +129,8 @@ section{
     border: var(--borderLime);
     width: 18vw;
     border-radius: 50%;
+    margin-top: 40px;
+
 }
 
 .info-box{
@@ -182,6 +187,7 @@ section{
 #about img{
     width: 30vw;
     border-radius: 1em;
+
 }
 .about-box{
     display: flex;
@@ -189,6 +195,8 @@ section{
     text-align: left;
     color: white;
     gap: 2em;
+    margin-top: 40px;
+
 }
 
 .about-box h1{
@@ -288,6 +296,7 @@ form .input-box{
     flex-direction: column;
     align-items: baseline;
     gap:1em;
+    background-color: bisque;
 }
 
 .input-box span{
@@ -367,9 +376,11 @@ font-size: 1.2em;
     color: white;
 }
 
+/* media queries */
+
 @media(max-width:968px){
 *{
-    background-color: brown;
+    background-color: #666;
 }
 section{
     padding: 8em 15%;
@@ -421,4 +432,57 @@ nav.btn{
     font-size: 3em;
 }
 
+#aobut ul{
+    font-size: 1em;
 }
+
+}
+
+@media(max-width:768px){
+    *{
+        background-color: #222;
+    }
+    #home h1{
+        font-size: 2.5em;
+    }
+    #home h3{
+        font-size: 1.5em;
+    }
+    #home img{
+        width: 32vw;
+    }
+    #about .skills{
+        gap: 3em;
+    }
+    .about-info{
+        margin-top: -80px;
+    }
+
+    #services{
+        margin-top: -500px;
+    }
+    #services img{
+        display: none;
+    }
+    #contact .header{
+        font-size: 3em;
+    }
+    #contact{
+        margin-top: -200px;
+    }
+    #contact .input-box span{
+        font-size: 1.2em;
+    }
+    .input-box input{
+        padding: .5em 1em;
+    }
+    footer{ 
+        
+        flex-direction: column;
+        gap: 5em;
+        align-items: baseline;
+    
+    }
+
+  
+    }
